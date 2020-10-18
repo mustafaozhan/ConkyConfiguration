@@ -15,16 +15,14 @@ This is my Arch linux conky configuration with conky, lua, Google Calendar and G
 # Installation
 - <b>Ubuntu & Derivatives</b>
 
-You should have ```git``` installed
 ```
-sudo apt-get install conky-all python3-pip python-pip ; sudo pip3 install beautifulsoup4 requests lxml ; sudo pip install gcalcli ; git clone https://github.com/mustafaozhan/GoogleIntegratedSystemConky ; cd GoogleIntegratedSystemConky/ ; chmod +x install.sh && sh ; install.sh
+sudo apt install conky-all python3-pip python-pip git; sudo pip3 install beautifulsoup4 requests lxml ; sudo pip install gcalcli ; git clone https://github.com/mustafaozhan/GoogleIntegratedSystemConky ; cd GoogleIntegratedSystemConky/ ; chmod +x install.sh && sh ; install.sh
 ```
 
 - <b>Arch Linux & Derivatives</b>
 
-  You should have ```yaourt``` and ```git``` installed
 ```
-sudo pacman -S python-pip python2-pip ; yaourt -S conky-lua ; sudo pip3 install beautifulsoup4 requests lxml ; sudo pip2.7 install gcalcli ; git clone https://github.com/mustafaozhan/GoogleIntegratedSystemConky ; cd GoogleIntegratedSystemConky/ ; chmod +x install.sh && sh install.sh
+sudo pacman -S python-pip python2-pip git; git clone https://aur.archlinux.org/package-query.git ; cd package-query/ ; makepkg -si ; cd .. ; git clone https://aur.archlinux.org/yaourt.git ; cd yaourt ; makepkg -si ; cd .. ; rm -rf yaourt/ package-query ; yaourt -S conky-lua ; sudo pip3 install beautifulsoup4 requests lxml ; sudo pip2.7 install gcalcli ; git clone https://github.com/mustafaozhan/GoogleIntegratedSystemConky ; cd GoogleIntegratedSystemConky/ ; chmod +x install.sh && sh install.sh
 ```
 
 - Go to the ~/.config/GoogleIntegratedSystemConky/background/ and choose a wallpaper and add your profile picture in the circle (You can use gimp as a editor and for good looking you can make it grayscale)
